@@ -2,6 +2,8 @@
 
 > Convert plain-text hashtags into twitter-ready hyperlinks
 
+[![Build Status](https://travis-ci.org/radiovisual/taghash.svg?branch=master)](https://travis-ci.org/radiovisual/taghash)
+
 ## Usage
 
 ```js
