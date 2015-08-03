@@ -7,8 +7,8 @@
 ```js
 var taghash = require('taghash');
 
-var markup01 = taghash("Some text a #coolhash");
-//=> Some text a <a href="https://twitter.com/hashtag/coolhash">#coolhash</a>
+var markup01 = taghash("Some text with #acoolhash");
+//=> Some text with <a href="https://twitter.com/hashtag/acoolhash">#acoolhash</a>
 
 var markup02 = taghash("#many #hastags");
 //=> <a href="https://twitter.com/hashtag/many">#many</a> <a href="https://twitter.com/hashtag/hastags">#hastags</a>
