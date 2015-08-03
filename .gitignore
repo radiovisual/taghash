@@ -29,3 +29,5 @@ node_modules
 #Ignore my test app
 testapp.js
 
+#Reject Webstorm's config
+.idea
