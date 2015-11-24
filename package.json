@@ -1,7 +1,7 @@
 {
   "name": "taghash",
-  "version": "1.0.0",
-  "description": "Convert plain-text hastags into twitter-ready hyperlinks",
+  "version": "1.1.0",
+  "description": "Convert plain-text hashtags into twitter-ready hyperlinks",
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
@@ -16,14 +16,18 @@
   },
   "keywords": [
     "twitter",
-    "hastag",
-    "hastags",
+    "hashtag",
+    "hashtags",
     "hyperlinks",
     "anchor",
     "a",
     "convert",
     "string",
-    "plain-text"
+    "plain-text",
+    "hash",
+    "tag",
+    "href",
+    "pound"
   ],
   "author": "Michael Wuergler <senjudev@gmail.com> (http://numetriclabs.com)",
   "license": "MIT",

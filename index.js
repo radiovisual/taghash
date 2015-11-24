@@ -1,6 +1,12 @@
 'use strict';
 
-module.exports = function(str){
+module.exports = function(str, options){
+
+    var href = "https://twitter.com/hashtag/";
+
+    if (options && options.href){
+        href = options.href;
+    }
 
     var regex = /#/gmi;
 
@@ -17,7 +23,7 @@ module.exports = function(str){
 
         // ignore tags that have a double "##"
         if(hash.substring(0,1) !== "#"){
-            s = s.replace(item, '<a href="https://twitter.com/hashtag/'+hash+'">'+item+'</a>');
+            s = s.replace(item, '<a href="'+href+''+hash+'">'+item+'</a>');
         }
 
     });

@@ -46,6 +46,10 @@ describe("taghash", function(){
 
     });
 
+    it('should allow a custom src passed in', function(){
+        assert.equal(taghash("howdy peeps #yo!", {href: "http://example.com/"}), "howdy peeps <a href=\"http://example.com/yo\">#yo</a>!")
+    });
+
 
 
 
