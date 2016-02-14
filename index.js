@@ -1,16 +1,13 @@
 'use strict';
 
-module.exports = function(str, options){
+module.exports = function (str, options) {
+    var href = 'https://twitter.com/hashtag/';
 
-    var href = "https://twitter.com/hashtag/";
-
-    if (options && options.href){
+    if (options && options.href) {
         href = options.href;
     }
 
-    var regex = /#/gmi;
-
-    if( !(/#/).test(str) ){
+    if (!(/#/).test(str)) {
         return str;
     }
 
@@ -18,16 +15,13 @@ module.exports = function(str, options){
 
     var s = str;
 
-    hashes.forEach(function(item, index, array){
+    hashes.forEach(function (item) {
         var hash = item.slice(1);
 
         // ignore tags that have a double "##"
-        if(hash.substring(0,1) !== "#"){
-            s = s.replace(item, '<a href="'+href+''+hash+'">'+item+'</a>');
+        if (hash.substring(0, 1) !== '#') {
+            s = s.replace(item, '<a href="' + href + '' + hash + '">' + item + '</a>');
         }
-
     });
-
     return s;
-
 };
