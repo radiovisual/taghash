@@ -7,6 +7,7 @@
 ## Usage
 
 Defaults to twitter-ready hyperlinks:
+
 ```js
 var taghash = require('taghash');
 
@@ -18,10 +19,10 @@ var markup02 = taghash("#many #hastags");
 ```
 
 But you can pass in any href you want:
+
 ```js
 var markup03 = taghash("pass custom src #hashtag!", {href: "http://example.com/"});
 //=> pass custom src <a href="http://example.com/hashtag">#hashtag</a>!
-
 ```
 
 ## License 
