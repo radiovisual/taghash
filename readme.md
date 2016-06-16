@@ -9,10 +9,10 @@
 ```js
 var taghash = require('taghash');
 
-var markup01 = taghash("Some text with #acoolhash");
+taghash('Some text with #acoolhash');
 //=> 'Some text with <a href="https://twitter.com/hashtag/acoolhash">#acoolhash</a>'
 
-var markup02 = taghash("#many #hastags");
+taghash('#many #hastags');
 //=> '<a href="https://twitter.com/hashtag/many">#many</a> <a href="https://twitter.com/hashtag/hastags">#hastags</a>'
 ```
 
@@ -34,12 +34,12 @@ The string with hashtags you want to convert.
 ##### href
 
 Type: `string`  
-Default: `https://twitter.com/hashtag/`
+Default: `'https://twitter.com/hashtag/'`
 
 The href value you want to use when surrounding your hashtags with a url. The default is Twitter's hashtag url.
 
 ```js
-taghash("pass custom src #hashtag!", {href: "http://example.com/"});
+taghash('pass custom src #hashtag!', {href: 'http://example.com/'});
 //=> 'pass custom src <a href="http://example.com/hashtag">#hashtag</a>!'
 ```
 
